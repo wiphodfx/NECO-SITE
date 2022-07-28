@@ -1,0 +1,722 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: PT sans,Arila,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #fff;
+    background: url(../images/p1.png);
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(../images/p1.png); */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header{
+    width: 1040px;
+    min-height: 1119.8px;
+    background: #fff;
+}
+
+.header1{
+    display: flex;
+    background-color: #fff;
+    padding: 0 20px;
+    justify-content: space-between;
+    border-bottom: 5px solid #063;
+    min-height: 32px;
+    align-items: center;
+}
+
+.support{
+    width: 460px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 5px;
+    min-height: 1px;
+}
+
+.support span{
+    font-weight: bold;
+}
+
+.socials {
+    margin-right: 5%;
+    width: 460px;
+}
+
+.socials ul{
+    display: inline-flex;
+    float: right;
+}
+
+.socials ul li{
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    background: #fff;
+    padding: 10 20px;
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.socials ul li i{
+    font-size: 18px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.socials ul li:hover{
+    background: #000;
+    
+}
+
+.socials ul li i:hover{
+    background: #000;
+    top: 50;
+    left: 50;
+    transform: translateY(180)
+}
+
+.socials ul li:hover i{
+    color: #fff;
+    
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translateY(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(20%, 20%);
+    
+}
+/* .............Logo & Nav Section....................... */
+
+.dashboard{
+    background: #fff;
+    display: flex;
+    padding: 10px 30px;
+    border-bottom: 1px solid #eee;
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    /* position: relative; */
+}
+
+.logo {
+    width: 330px;
+    height: 36px;
+}
+
+.links{
+    display: flex;
+    margin: 10  0 10px 25px;
+    width: 940px;
+    height: 70px;
+}
+
+.links ul{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 60px;
+    width: 56px;
+}
+
+.links ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+   
+}
+
+
+.links ul li a{
+    display: block;
+    padding: 18px 1px 20px 20px;
+    line-height: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 13px;
+    font-weight: bolder;
+    width: 120px;
+}
+
+.links ul li a:hover{
+    background: #eee;
+    color: #063;
+    transition: 0.5s;
+}
+
+
+/* ..............SubMenu................... */
+.subexams{
+    display: none;
+}
+
+.links ul li:hover .subexams{
+    position: absolute;
+    display: block;
+    background: #555;
+    top:16%;
+    margin-left: 55px; 
+    /* width:200px ; */
+    
+
+}
+
+.links ul li:hover .subexams ul{
+    display: block;
+    margin: 0;
+    width:180px;
+}
+
+.links ul li:hover .subexams ul li{
+
+    border-bottom:  1px solid #626262;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+   
+}
+
+
+.links ul li:hover .subexams ul li a{
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: normal;
+    text-align: left;
+    background: none;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 12px;
+    width: 260px;
+}
+
+.links ul li:hover .subexams ul li:hover{
+    background: #063;
+}
+
+/* ..................Our Exams Bar.................*/
+
+.exambar{
+    width: 1040px;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 1px solid #626262; */
+    border-bottom: 1px solid #eee;
+    
+}
+.examsbar{
+    display: inline-flex;
+    width: 940px;
+    height: 60px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.examsbar h1{
+    float: left;
+    margin-top: 0px;
+    margin-left: -10px;
+    padding-right: 40px;
+    border-right: 1px solid #ddd;
+    margin-right: 40px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #333;
+
+}
+
+.examsbar .togglehome ul{
+    display: inline-flex;
+}
+
+.examsbar .togglehome ul li{
+   list-style: none;
+   line-height: 1.7em;
+   font-size: 12px;
+}
+
+.examsbar .togglehome ul li a{
+   color: #063;
+   margin-right: 10px;
+}
+
+
+/* ..............SlideBar....................... */
+.slidebar{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 1040px;
+    height: 272px;
+    align-items: center;
+    /* position: relative; */
+}
+
+.slidebar img{
+    width: 1040px;
+    height: 272px;
+}
+
+.dispText{
+    position: absolute;
+    left: 15%;
+    top:25%;
+}
+
+.dispText p{
+    font-size: 24px;
+    line-height: 20px;
+    color: #064;
+    
+
+}
+
+.dispText span{
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.dispText button{
+    padding: 10px 20px;
+    background: #064;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.slidebar .fa-circle-chevron-left{
+    position: absolute;
+    font-size: 40px;
+    background: none;
+    right:83%;
+    background: #333;
+    cursor: pointer;
+}
+
+.slidebar .fa-circle-chevron-right{
+    border-radius: 50%;
+    position: absolute;
+    right: 13%;
+    font-size: 40px;
+    background: #333;
+    cursor: pointer;
+}
+/* .................MiddleFrame....................... */
+.middleFrame{
+    width: 1040px;
+    height: 1119.8px;
+    background: #fff;
+    margin-top: 30px;
+}
+
+.sub-middleFrame{
+    width: 960px;
+    height: 330px;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px,1fr));
+    grid-gap: 10px;
+}
+
+.submidFrameRow{
+    width: 460px;
+    height: 150px;
+    padding: 10px 10px;
+    background: #eee;
+    border: 10px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items:flex-start;  
+    box-shadow:5px #000;
+    cursor: pointer;
+}
+
+.submidFrameRow:hover{
+    background: whitesmoke;
+}
+
+.submidFrameRow h3{
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.submidFrameRow p{
+    font-size: 13px;
+    color: #848484;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.submidFrameRow button{
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    background: #063;
+    border-radius: 3px;
+    border: 0;
+    font-weight: 500;
+}
+
+.fa-solid{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: #063;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.subtxt a{
+    margin-right: 40px;
+    color: #063;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.subtxt .ntxt{
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+}
+
+.subtxt .ntxt span{
+    font-size: 17px;
+}
+
+.subtxt .txt{
+    font-size: 15px;
+}
+
+.teext p{
+    font-size: 12px;
+}
+
+.teext a{
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.subtxt .hightlighted{
+    background: #e74c3c;
+    line-height: 1.7em;
+    box-shadow: 0px 0px 5px #e74c3c, 0px 0px 15px #e74c3c;
+    padding: 0 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+}
+
+.resultCardHolder{
+    width: 1040px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    padding: 0 10px;
+    justify-content:center;
+    margin-top: -30px;
+
+}
+.resultcard{
+    width: 945px;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%);
+    border: 1px solid #ddd;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.resultcard p{
+    padding: 20px 20px 20px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+
+.resultcard button{
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+    background: #063;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+/* ............................Sub framee.................... */
+
+.latestNews{
+    width: 1040px;
+    height: 48%;
+    background: #fff;
+    /* background-color: #063; */
+    margin-top: -60px;
+   
+}
+
+.latestNewsRow{
+    width: 1040px;
+    height: 48%;
+    padding: 0px 40px;
+    /* background: red; */
+    display: flex;
+}
+
+.latestNewCol1 {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    
+}
+
+.latNews{
+    width: 160px;
+    font-size: 20.5px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.notePad{
+    width: 460px;
+    height: 200px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    /* background: #fff; */
+    padding: 20px 0;
+
+}
+
+.calendarsec{
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.day{
+    width: 60px;
+    padding: 30px;
+    font-size: 26px;
+    display: block;
+    padding: 20px 0 20px 0;
+    background: #555;
+    color: #fff;
+    text-align: center;
+}
+
+.month{
+    width: 60px;
+    background: #063;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    line-height: 1.7em;
+    font-weight: bold;
+}
+
+.textPad p{
+margin-bottom: 5px;
+line-height: 20px;
+font-size: 13px;
+font-weight: bold;
+color: #848484;
+}
+
+.textPad .cardmgt a{
+    margin-bottom: 10px;
+    color: #063;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sub-contents p{
+    line-height: 2.0em;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.sub-contents a{
+    color:#064;
+}
+
+.sub-contents ul {
+    margin-left: 60px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.latestNewCol2{
+    width: 480px;
+    margin-left: 20px;
+}
+
+.disclaimer p{
+    display: inline-flex;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    background: #ccc;
+    color: #000;
+}
+
+.sub-contents{
+    display: none;
+    border: 1px solid #ddd;
+    background: #FCFCFC;
+}
+
+.active-tab{
+    display: block;
+}
+
+/* .....................FOOTER................................. */
+
+.footer{
+    width:1040px;
+    height: 303.1px;
+    background:#f5f5f5;
+    display: flex;
+    padding: 20px 40px;
+}
+
+.footercol1{
+    line-height: 1.7em;
+    color: #848484;
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.footercol1 h3{
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.footercol1 p{
+    width: 460px;
+    font-size: 13px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    width: 460px;
+    color: #848484;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footercol2{
+    margin-right: 40px;
+}
+
+.footercol2 h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.footercol2 ul li{
+    list-style: none;
+    width: 170px;
+    line-height: 1.7em;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0;
+}
+
+.footercol2 ul li a{
+    color: #555;
+    font-size: 13px;
+    text-decoration:none;
+    font-weight: 700;
+}
+
+.footercol2 ul li a:hover{
+    text-decoration:underline
+}
+
+
+.footercol3{
+    margin-left: 20px;
+}
+.footercol3 h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.footercol3 p{
+    font-size: 13px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 460px;
+    color: #848484;
+    
+}
+
+.subfooter{
+    display: flex;
+    width: 1040px;
+    height: 60px;
+    border-top: 1px #ddd;
+    background: #eee;
+}
+
+.subfooter p{
+    font-size: 13px;
+    margin:10px 0 40px 40px;
+    padding: 10px 0 0 0;
+    color: #848484;
+    font-weight: bold;
+}
